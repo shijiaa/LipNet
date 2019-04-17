@@ -59,4 +59,4 @@ for filepath in find_files(SOURCE_PATH, SOURCE_EXTS):
         image = Image.fromarray(np.uint8(frame))
         image.save(os.path.join(target_dir, "mouth_{0:03d}.png".format(i)))
     	# io.imsave(os.path.join(target_dir, "mouth_{0:03d}.png".format(i)), frame)
-    	i += 1
+        i += 1
