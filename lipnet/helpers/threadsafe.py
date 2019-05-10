@@ -13,8 +13,8 @@ class threadsafe_iter:
 
     def __next__(self):
         with self.lock:
-            return next(self.it)
-            #return self.it.__next__()
+            #return next(self.it)
+            return self.it.__next__()
 
 
 def threadsafe_generator(f):
