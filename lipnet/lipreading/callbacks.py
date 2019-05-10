@@ -104,7 +104,7 @@ class Visualize(keras.callbacks.Callback):
         input_length = output_batch['input_length'][0:self.num_display_sentences]
         res          = self.decoder.decode(y_pred, input_length)
 
-        with open(os.path.join(self.output_dir, 'e%02d.csv' % (epoch)), 'wb') as csvfile:
+        with open(os.path.join(self.output_dir, 'e%02d.csv' % (epoch)), 'w') as csvfile:
             csvw = csv.writer(csvfile)
             csvw.writerow(["Truth", "Decoded"])
             for i in range(self.num_display_sentences):
