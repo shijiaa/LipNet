@@ -21,5 +21,5 @@ setup(name='lipnet',
 		'Theano==1.0.4',
         'nltk==3.2.5',
         'sk-video==1.1.10',
-        'dlib==19.4.0'
+        'dlib==19.16.0'
     ])
